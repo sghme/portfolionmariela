@@ -154,57 +154,72 @@ I also create simple websites with clean layouts and basic functionality. I am c
 </section>
 
 
-   </section><!-- Contact Section -->
-   <section id="contact" class="min-h-full flex items-center py-32 px-6 bg-white text-black">
-    <div class="max-w-4xl mx-auto w-full">
-     <h2 class="section-title text-5xl md:text-6xl font-black mb-8 text-center fade-in-up">Get In Touch</h2>
-     <p id="contact-headline" class="text-2xl text-center mb-16 text-gray-600 fade-in-up">Let's create something amazing together</p>
-      <form action="https://formsubmit.co/d2f7ce5d9be88c0baa64b82b9f1c44e0" method="POST" class="space-y-6 fade-in-up">
-      
+  <section id="contact" class="min-h-full flex items-center py-32 px-6 bg-white text-black">
+  <div class="max-w-4xl mx-auto w-full">
+    <h2 class="section-title text-5xl md:text-6xl font-black mb-8 text-center fade-in-up">Get In Touch</h2>
+    <p id="contact-headline" class="text-2xl text-center mb-16 text-gray-600 fade-in-up">Let's create something amazing together</p>
+
+    <!-- Contact Form -->
+    <form 
+      id="contact-form" 
+      action="https://formsubmit.co/marielamay.navia@gmail.com" 
+      method="POST" 
+      class="space-y-6 fade-in-up"
+    >
+      <!-- Hidden inputs for FormSubmit options -->
       <input type="hidden" name="_subject" value="New Portfolio Message">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
+      
 
       <div class="grid md:grid-cols-2 gap-6">
-       <div><label for="name" class="block font-bold mb-2">Name</label> <input type="text" id="name" name="name" required class="form-input w-full px-6 py-4 border-2 border-black rounded-lg bg-white">
-       </div>
-       <div><label for="email" class="block font-bold mb-2">Email</label> <input type="email" id="email" name="email" required class="form-input w-full px-6 py-4 border-2 border-black rounded-lg bg-white">
-       </div>
+        <div>
+          <label for="name" class="block font-bold mb-2">Name</label>
+          <input type="text" id="name" name="name" required class="form-input w-full px-6 py-4 border-2 border-black rounded-lg bg-white">
+        </div>
+        <div>
+          <label for="email" class="block font-bold mb-2">Email</label>
+          <input type="email" id="email" name="email" required class="form-input w-full px-6 py-4 border-2 border-black rounded-lg bg-white">
+        </div>
       </div>
-      <div><label for="message" class="block font-bold mb-2">Message</label> <textarea id="message" name="message" required rows="6" class="form-input w-full px-6 py-4 border-2 border-black rounded-lg bg-white"></textarea>
-      </div><button type="submit" class="btn-primary w-full bg-black text-white py-5 rounded-lg font-bold text-lg"> Send Message </button>
-     </form>
-     <div class="mt-16 text-center">
-      <p class="text-xl mb-4">Or reach me at:</p><a id="email-display" href="mailto:marielamay.navia@gmail.com" class="text-2xl font-bold hover:underline">marielamay.navia@gmail.com</a>
-      <div class="flex justify-center items-center gap-6 mt-8">
-        <a href="https://www.facebook.com/me.marielaaa"
-          class="social-icon hover:scale-110 transition" >
-          <img src="https://cdn.simpleicons.org/facebook/000000"
-              alt="Facebook"
-              class="h-8 w-8">
-        </a>
-        <a href="https://www.instagram.com/sghmee/"
-           class="social-icon hover:scale-110 transition">
-          <img src="https://cdn.simpleicons.org/instagram/000000"
-              alt="Instagram"
-              class="h-8 w-8">
-        </a>
-        <a href="https://www.linkedin.com/in/mariela-navia/"
-         class="social-icon hover:scale-110 transition">
-        <img src="images/icon/linkedin.svg"
-            alt="LinkedIn"
-            class="h-11 w-11">
-      </a>
-        <a href="https://github.com/sghme"
-           class="social-icon hover:scale-110 transition">
-          <img src="https://cdn.simpleicons.org/github/000000"
-              alt="GitHub"
-              class="h-8 w-8">
-        </a>
+
+      <div>
+        <label for="message" class="block font-bold mb-2">Message</label>
+        <textarea id="message" name="message" required rows="6" class="form-input w-full px-6 py-4 border-2 border-black rounded-lg bg-white"></textarea>
       </div>
-     </div>
+
+      <button type="submit" class="btn-primary w-full bg-black text-white py-5 rounded-lg font-bold text-lg">Send Message</button>
+    </form>
+
+    <div id="form-success" class="mt-4 text-center text-green-600 hidden">
+      ✅ Your message has been sent! I’ll get back to you soon.
     </div>
-   </section><!-- Modal for Portfolio Items -->
+
+    <!-- Email & Socials -->
+    <div class="mt-16 text-center">
+      <p class="text-xl mb-4">Or reach me at:</p>
+      <a id="email-display" href="mailto:marielamay.navia@gmail.com" class="text-2xl font-bold hover:underline">marielamay.navia@gmail.com</a>
+      <div class="flex justify-center items-center gap-6 mt-8">
+        <a href="https://www.facebook.com/me.marielaaa" class="social-icon hover:scale-110 transition">
+          <img src="https://cdn.simpleicons.org/facebook/000000" alt="Facebook" class="h-8 w-8">
+        </a>
+        <a href="https://www.instagram.com/sghmee/" class="social-icon hover:scale-110 transition">
+          <img src="https://cdn.simpleicons.org/instagram/000000" alt="Instagram" class="h-8 w-8">
+        </a>
+        <a href="https://www.linkedin.com/in/mariela-navia/" class="social-icon hover:scale-110 transition">
+          <img src="images/icon/linkedin.svg" alt="LinkedIn" class="h-11 w-11">
+        </a>
+        <a href="https://github.com/sghme" class="social-icon hover:scale-110 transition">
+          <img src="https://cdn.simpleicons.org/github/000000" alt="GitHub" class="h-8 w-8">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+</section>
+
+   <!-- Modal for Portfolio Items -->
    <div id="modal" class="modal"><button id="close-modal" class="absolute top-8 right-8 text-white text-4xl z-10 hover:scale-110 transition">×</button>
     <div class="modal-content bg-white text-black p-2 rounded-lg"><img id="modal-image" src="" alt="Project" class="w-full h-auto rounded">
     </div>
@@ -212,12 +227,4 @@ I also create simple websites with clean layouts and basic functionality. I am c
   </div>
   <script src="script.js"></script>
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b202aa8755abc43',t:'MTc2NjQxMjI0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-
 </html>
-
-
-
-
-
-
-
