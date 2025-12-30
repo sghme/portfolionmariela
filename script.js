@@ -10,18 +10,18 @@
 
      // Portfolio data - Replace these URLs with your own project images
     const portfolioItems = [
-      { title: 'Birthday Poster', category: 'illustrations', image: 'images/7.jpeg', color: '#1a1a1a' },
-      { title: 'Birthday Poster', category: 'illustrations', image: 'images/8.jpeg', color: '#1a1a1a' },
-      { title: 'Brand Identity', category: 'illustrations', image: 'images/16.jpeg', color: '#2d2d2d' },
-      { title: 'Social Graphics', category: 'illustrations', image: 'images/5.jpeg', color: '#404040' },
-      { title: 'Digital Art', category: 'illustrations', image: 'images/13.jpg', color: '#404040' },
-      { title: 'Digital Art', category: 'illustrations', image: 'images/10.jpeg', color: '#404040' },
-      { title: 'Event Poster', category: 'posters', image: 'images/11.jpeg', color: '#2d2d2d' },
-      { title: 'Logo Design', category: 'branding', image: 'images/15.jpeg', color: '#404040' },
-      { title: 'Product Poster', category: 'posters', image: 'images/2.jpeg', color: '#1a1a1a' },
-      { title: 'Marketing Kit', category: 'posters', image: 'images/14.jpeg', color: '#2d2d2d' },
-      { title: 'Product Poster', category: 'posters', image: 'images/6.jpeg', color: '#1a1a1a' },
-      { title: 'Event Poster', category: 'posters', image: 'images/1.jpg', color: '#2d2d2d' },
+      { title: 'Birthday Poster', category: 'illustrations', image: '/images/7.jpeg', color: '#1a1a1a' },
+      { title: 'Birthday Poster', category: 'illustrations', image: '/images/8.jpeg', color: '#1a1a1a' },
+      { title: 'Brand Identity', category: 'illustrations', image: '/images/16.jpeg', color: '#2d2d2d' },
+      { title: 'Social Graphics', category: 'illustrations', image: '/images/5.jpeg', color: '#404040' },
+      { title: 'Digital Art', category: 'illustrations', image: '/images/13.jpg', color: '#404040' },
+      { title: 'Digital Art', category: 'illustrations', image: '/images/10.jpeg', color: '#404040' },
+      { title: 'Event Poster', category: 'posters', image: '/images/11.jpeg', color: '#2d2d2d' },
+      { title: 'Logo Design', category: 'branding', image: '/images/15.jpeg', color: '#404040' },
+      { title: 'Product Poster', category: 'posters', image: '/images/2.jpeg', color: '#1a1a1a' },
+      { title: 'Marketing Kit', category: 'posters', image: '/images/14.jpeg', color: '#2d2d2d' },
+      { title: 'Product Poster', category: 'posters', image: '/images/6.jpeg', color: '#1a1a1a' },
+      { title: 'Event Poster', category: 'posters', image: '/images/1.jpg', color: '#2d2d2d' },
 
 
     ];
@@ -29,22 +29,22 @@
     // Modern collage carousel data - use your own image URLs
     const collageSlides = [
       [
-        { image: 'images/15.jpeg'},
-        { image: 'images/14.jpeg'},
-        { image: 'images/6.jpeg'},
-        { image: 'images/1.jpg'}
+        { image: '/images/15.jpeg'},
+        { image: '/images/14.jpeg'},
+        { image: '/images/6.jpeg'},
+        { image: '/images/1.jpg'}
       ],
       [
-        { image: 'images/14.jpeg'},
-        { image: 'images/6.jpeg'},
-        { image: 'images/15.jpeg'},
-        { image: 'images/1.jpg'}
+        { image: '/images/14.jpeg'},
+        { image: '/images/6.jpeg'},
+        { image: '/images/15.jpeg'},
+        { image: '/images/1.jpg'}
       ],
       [
-        { image: 'images/6.jpeg'},
-        { image: 'images/15.jpeg'},
-        { image: 'images/1.jpg'},
-        { image: 'images/14.jpeg'}
+        { image: '/images/6.jpeg'},
+        { image: '/images/15.jpeg'},
+        { image: '/images/1.jpg'},
+        { image: '/images/14.jpeg'}
         
       ]
     ];
@@ -266,3 +266,4 @@
     initCollageCarousel();
     renderPortfolio();
  
+
