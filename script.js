@@ -190,33 +190,17 @@
     });
 
     // Contact form
-    document.getElementById('contact-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      const form = e.target;
-      const btn = form.querySelector('button');
-      const originalText = btn.textContent;
-      
-      btn.textContent = '✓ Message Sent!';
-      btn.style.background = '#10b981';
-      
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        form.reset();
-      }, 3000);
-    });
+    
 
     // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+    const contactForm = document.getElementById('contact-form');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', () => {
+        const btn = contactForm.querySelector('button');
+        btn.textContent = 'Sending...';
       });
-    });
+    }
 
     // Element SDK implementation
     async function onConfigChange(config) {
@@ -266,4 +250,5 @@
     initCollageCarousel();
     renderPortfolio();
  
+
 
