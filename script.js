@@ -147,6 +147,34 @@
         document.getElementById('modal').classList.remove('active');
       }
     });
+ 
+   // Video Modal functions
+    function openVideoModal(videoSrc) {
+      const videoModal = document.getElementById('video-modal');
+      const modalVideo = document.getElementById('modal-video');
+      modalVideo.querySelector('source').src = videoSrc;
+      modalVideo.load();
+      videoModal.classList.add('active');
+      modalVideo.play();
+    }
+
+    document.getElementById('close-video-modal').addEventListener('click', () => {
+      const videoModal = document.getElementById('video-modal');
+      const modalVideo = document.getElementById('modal-video');
+      modalVideo.pause();
+      modalVideo.currentTime = 0;
+      videoModal.classList.remove('active');
+    });
+
+    document.getElementById('video-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'video-modal') {
+        const videoModal = document.getElementById('video-modal');
+        const modalVideo = document.getElementById('modal-video');
+        modalVideo.pause();
+        modalVideo.currentTime = 0;
+        videoModal.classList.remove('active');
+      }
+    });
 
     // Mobile menu
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -250,5 +278,6 @@
     initCollageCarousel();
     renderPortfolio();
  
+
 
 
